@@ -1,0 +1,151 @@
+.home-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr 1fr 1fr;
+    grid-template-areas: "navbar content content content";
+}
+
+.navbar {
+    height: 100%;
+    width: 100%;
+    background-color: #ED1260 !important;
+    overflow-x: hidden;
+    grid-area: navbar;
+}
+
+
+.logo {
+    width: 183.36px;
+    height: 34px;
+    margin-top: -20.3rem!important;
+    padding-left: 2rem;
+}
+
+.dropdown-menu {
+    z-index: 1;
+}
+
+a {
+font-family: Lato;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: start;
+color: #FFFFFF;
+padding-left: 2rem !important;
+}
+
+.content-container {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.6fr 0.7fr 0.7fr 2fr;
+    grid-template-areas: 
+    "header"
+    "welcome"
+    "remaining"
+    "table1";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-controls {
+    height: 35px;
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+
+}
+
+.user-account {
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.user-name {
+    margin-bottom: 0 !important;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #4F4F4F;
+    box-sizing: border-box;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.user-email {
+    padding-top: 0 !important;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4F4F4F;
+}
+
+.image-user {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.welcome-text {
+    grid-area: welcome;
+    border: 1px solid grey;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border-top-width: 5px;
+    border-top-color: #ED1260;
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.greeting-text {
+    margin-bottom: 0;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.002em;
+    color: #312F30;
+}
+.after-greeting {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.002em;
+    color: #312F30;
+}
+
+.remaining {
+    grid-area: remaining;
+    background-color: rgb(255, 127, 197);
+
+}
+
+.table-content {
+    grid-area: table1;
+    background-color: rgb(255, 136, 127);
+
+}
