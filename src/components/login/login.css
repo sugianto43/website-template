@@ -6,7 +6,7 @@
     grid-template-areas: 'login side side side';
 }
 
-.logo {
+.logo-login {
     width: 278.13px;
     height: 51.19px;
     left: 153.15px;
@@ -15,7 +15,7 @@
     margin-bottom: 4rem;
 }
 
-.welcome-text {
+.welcome-texts {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -48,6 +48,7 @@ form {
 
 .btn-sign {
     background-color: #ED1260;
+    margin-left: 0px;
 }
 
 .btn-sign:hover {

@@ -1,5 +1,6 @@
 import "./login.css";
 import logo from "../../assets/img/color-logo.svg";
+import { Link } from "react-router-dom";
 // import logo2 from "../../assets/img/logo-big.svg";
 
 function Login() {
@@ -7,9 +8,9 @@ function Login() {
     <div className="containers">
       <div className="form-login mt-2 hv-center">
         <form>
-          <img src={logo} alt="logo" className="logo"></img>
+          <img src={logo} alt="logo" className="logo-login"></img>
           <div className="form-group text-left">
-            <p className="welcome-text">
+            <p className="welcome-texts">
               Welcome Back, Please login into your account
             </p>
             <label>Username/Email</label>
@@ -25,6 +26,7 @@ function Login() {
             <input type="password" className="form-control" id="password" />
           </div>
           <hr />
+          <Link to="homes" style={{textDecoration: 'none', color: 'White', marginLeft:'0px'}}>
           <button
             type="submit"
             className="btn col-12 btn-primary btn-sign"
@@ -32,6 +34,7 @@ function Login() {
           >
             Sign In
           </button>
+          </Link>
         </form>
       </div>
       <div className="side">
