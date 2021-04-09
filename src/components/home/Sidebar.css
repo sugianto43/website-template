@@ -44,6 +44,7 @@ background-color: #ED1260;
     border-bottom: 3px solid #FFFFFF;
     position: relative;
     text-decoration: pointer;
+    z-index: 2;
 }
 
 .nav-link:hover {
