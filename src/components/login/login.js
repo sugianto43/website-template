@@ -13,17 +13,17 @@ function Login() {
             <p className="welcome-texts">
               Welcome Back, Please login into your account
             </p>
-            <label>Username/Email</label>
+            <label className='label-text'>Username/Email</label>
             <input
-              type="phone"
+              type="text"
               className="form-control"
               id="phone"
               aria-describedby="emailHelp"
             />
           </div>
           <div className="form-group text-left">
-            <label>Password</label>
-            <input type="password" className="form-control" id="password" />
+            <label className='label-text'>Password</label>
+            <input type="password" className="form-control" id="password"></input>
           </div>
           <hr />
           <Link to="homes" style={{textDecoration: 'none', color: 'White', marginLeft:'0px'}}>

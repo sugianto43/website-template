@@ -1,0 +1,17 @@
+#custom-select {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  #custom-select span {
+    margin: 0 3px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.002em;
+    color: #3D3D3D;
+  }
+  

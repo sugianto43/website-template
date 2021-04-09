@@ -2,114 +2,27 @@
     height: 100vh;
     width: 100vw;
     display: grid;
+    grid-gap: 30px;
     grid-template-columns: 0.8fr 1.2fr 1fr 1fr;
     grid-template-areas: "navbar content content content";
-}
-
-.navbar {
-    height: 100%;
-    width: 100%;
-    background-color: #ED1260 !important;
     overflow-x: hidden;
-    grid-area: navbar;
-}
-
-
-.logo {
-    width: 183.36px;
-    height: 34px;
-    margin-top: -20.3rem!important;
-    padding-left: 2rem;
-}
-
-.dropdown-menu {
-    z-index: 1;
-}
-
-a {
-font-family: Lato;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-text-align: start;
-color: #FFFFFF;
-padding-left: 2rem !important;
 }
 
 .content-container {
     grid-area: content;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.6fr 0.7fr 0.7fr 2fr;
     grid-template-areas: 
-    "header"
-    "welcome"
-    "remaining"
-    "table1";
-}
-
-.header {
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.form-controls {
-    height: 35px;
-    width: 400px;
-    margin-top: 30px;
-    margin-left: 30px;
-    border-radius: 5px;
-    border: 1px solid grey;
-
-}
-
-.user-account {
-    display: flex;
-    flex-direction: row;
-}
-
-.user {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    text-align: right;
-}
-
-.user-name {
-    margin-bottom: 0 !important;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
-    color: #4F4F4F;
-    box-sizing: border-box;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.user-email {
-    padding-top: 0 !important;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
-    color: #4F4F4F;
-}
-
-.image-user {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-right: 2rem;
+    "header header"
+    "welcome welcome"
+    "remaining remaining"
+    "table1 table1";
 }
 
 .welcome-text {
     grid-area: welcome;
-    border: 1px solid grey;
-    margin-left: 30px;
+    border: 1px solid #ced4da;
     margin-right: 30px;
     border-radius: 10px;
     border-top-width: 5px;
@@ -140,9 +53,8 @@ padding-left: 2rem !important;
 
 .remaining {
     grid-area: remaining;
-    margin-left: 30px;
-    margin-right: 30px;
     text-align: left;
+    margin-right: 30px;
 }
 
 .remaining-quota {
@@ -169,26 +81,26 @@ padding-left: 2rem !important;
 .tab1 {
     grid-area: tab1;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid #ced4da;
     padding: 0 10px;
 }
 
 .tab2 {
-    border: 1px solid grey;
+    border: 1px solid #ced4da;
     border-radius: 10px;
     grid-area: tab2;
     padding: 0 10px;
 }
 
 .tab3 {
-    border: 1px solid grey;
+    border: 1px solid #ced4da;
     border-radius: 10px;
     grid-area: tab3;
     padding: 0 10px;
 }
 
 .tab4 {
-    border: 1px solid grey;
+    border: 1px solid #ced4da;
     border-radius: 10px;
     grid-area: tab4;
     padding: 0 10px;
@@ -197,7 +109,7 @@ padding-left: 2rem !important;
 .content-tab {
     display: flex;
     justify-content: space-between;
-    margin: 5px 5px;
+    padding: .5rem .5rem;
     text-align: center
 }
 
@@ -206,7 +118,6 @@ padding-left: 2rem !important;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
     letter-spacing: 0.01em;
     color: #777777;
     margin-top: 5px;
@@ -217,7 +128,6 @@ padding-left: 2rem !important;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
     text-align: right;
     letter-spacing: 0.01em;
     color: #22B9FF;
@@ -228,7 +138,6 @@ padding-left: 2rem !important;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
     text-align: right;
     letter-spacing: 0.01em;
     color: #FFB822;
@@ -258,10 +167,9 @@ padding-left: 2rem !important;
 
 .table-content {
     grid-area: table1;
-    border: 1px solid grey;
-    margin-left: 30px;
+    border: 1px solid #ced4da;
     margin-right: 30px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-radius: 10px;
     display: grid;
     grid-template-rows: 0.8fr 1.2fr 1fr 1fr;
@@ -297,6 +205,7 @@ hr {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
+    padding-top: 10px;
     color: #ED1260;
 }
 

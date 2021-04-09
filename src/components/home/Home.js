@@ -22,7 +22,7 @@ function Home() {
             </p>
           </div>
           <div className="remaining">
-            <p style={{ marginTop: "30px" }} className="remaining-quota">
+            <p style={{ paddingTop: "15px" }} className="remaining-quota">
               Remaining Quota
             </p>
             <div className="container-tab">
@@ -57,8 +57,8 @@ function Home() {
                   <div className='head-caption'>
                       <div className='recent'>Recent BLAST</div>
                       <div className='sort-filter'>
-                          <p>Sort</p>
-                          <p>Filter</p>
+                          <p><i class="fas fa-sort-amount-up" style={{paddingRight: '5px'}}/>Sort</p>
+                          <p><i class="fas fa-filter" style={{paddingRight: '5px'}}/>Filter</p>
                       </div>
                   </div>
                   <hr></hr>

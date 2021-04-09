@@ -1,0 +1,52 @@
+.navbar {
+    height: 100%;
+    width: 100%;
+    background-color: #ED1260 !important;
+    overflow-x: hidden;
+    grid-area: navbar;
+}
+
+
+.logo {
+    width: 183.36px;
+    height: 34px;
+    margin-top: -20.3rem!important;
+    padding-left: 2rem;
+}
+
+.dropdown-item {
+font-family: Lato;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: start;
+color: #FFFFFF;
+padding-left: 2rem;
+padding-bottom: 1rem;
+}
+
+.dropdown-item:hover {
+color: #FFFFFF;
+background-color: #ED1260;
+}
+
+.dropdown-item:hover:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #FFFFFF;
+    padding-top: 5px;
+}
+
+.home:hover:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #FFFFFF;
+    position: relative;
+    text-decoration: pointer;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+
+}
